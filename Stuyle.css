@@ -1,0 +1,47 @@
+body {
+  background-color: #000;
+  color: #00ffae;
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 2rem;
+}
+
+.terminal {
+  max-width: 80ch;
+  margin: 0 auto;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+
+.line {
+  display: block;
+  width: 0;
+  overflow: hidden;
+  border-right: 1px solid #00ffae;
+  white-space: nowrap;
+  animation: typing 2s steps(50, end) forwards, blink 0.7s step-end infinite;
+}
+
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 2.5s; }
+.delay-3 { animation-delay: 5s; }
+.delay-4 { animation-delay: 8s; }
+.delay-5 { animation-delay: 11s; }
+.delay-6 { animation-delay: 14s; }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.log {
+  color: #008f6a;
+}
+
+.output {
+  margin-top: 1rem;
+}
